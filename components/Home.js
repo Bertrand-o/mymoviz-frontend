@@ -11,7 +11,7 @@ function Home() {
   const [moviesData, setMoviesData] = useState([]);
 
   useEffect(() => {
-    fetch("https://verceldemo-backend.vercel.app/mymoviz-backend-psi-silk.vercel.app")
+    fetch("https://mymoviz-backend-psi-silk.vercel.app/")
       .then((response) => response.json())
       .then((data) => {
         let moviesList = data.movies;
